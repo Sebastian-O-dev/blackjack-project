@@ -110,12 +110,10 @@ while play == "y":
     # DEAL CARDS
     for i in range(2):
         player_cards.append(random.choice(cards))
-    for k in range(1):
-        player_cards.pop(0)
+    player_cards.pop(0)
     for j in range(2):
         dealer_cards.append(random.choice(cards))
-    for m in range(1):
-        dealer_cards.pop(0)
+    dealer_cards.pop(0)
 
     dealer_hand = dealer_cards[0]
 
